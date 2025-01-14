@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AuraMetrix-360</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <div class="nav-container">
+        <nav class="navbar-top">
+            <div class="nav-el left">
+                <div class="nav-image">
+                    <img src="img/aura-logo.png" alt="Nav-image" class="logo">
+                </div>
+                <div class="logo-text">
+                    <h1>AuraMetrix-360</h1>
+                </div>
+            </div>
+            <div class="nav-el right">
+                <div>
+                    <button class="btn check-health">
+                        <i class="fas fa-plus"></i>
+                        Record
+                    </button>
+                </div>
+                <div class="notifications">
+                    <i class="fas fa-bell"></i>
+                </div>                
+                <div class="profile">
+                    <img src="img/pp.jpg" alt="" class="nav-profile" id="pp">
+                </div>
+            </div>
+         </nav>
+    </div>
+    <div class="main-container">
+        <!-- Sidebar -->
+        <div class="sidebar" id="sidebar">
+            <ul class="sidebar-list">
+                <li><i class="fas fa-home"></i> Home</li>
+                <li><i class="fas fa-chart-line"></i> Analytics</li>
+                <li><i class="fas fa-cogs"></i> Settings</li>
+                <li><i class="fas fa-info-circle"></i> About</li>
+            </ul>
+            <div class="sidebar-bottom">
+                <a href="#">Logout</a>
+            </div>
+        </div>
+        <div class="app-container">
+            <div class="app-box top-left">
+                
+                <div class="box-head">
+                    <h3>Last health record</h2>
+                </div>
+                <div class="box-body">
+                    <div class="box-body-left">
+                        <!-- Top Section -->
+                        <div class="box-body-left-top">
+                            <div class="box-body-left-top-left">
+                                <i class="fas fa-heartbeat"></i>
+                                <h3>Heart Rate</h3>
+                                <p>80 bpm</p>
+                            </div>
+                            <div class="box-body-left-top-right">
+                                <i class="fas fa-thermometer-half"></i>
+                                <h3>Temperature</h3>
+                                <p>37.5 °C</p>
+                            </div>
+                        </div>
+                    
+                        <!-- Bottom Section -->
+                        <div class="box-body-left-bottom">
+                            <div class="box-body-left-bottom-left">
+                                <i class="fas fa-tint"></i>
+                                <h3>Blood Pressure</h3>
+                                <p>120/80 mmHg</p>
+                            </div>
+                            <div class="box-body-left-bottom-right">
+                                <i class="fas fa-lungs"></i>
+                                <h3>SpO2</h3>
+                                <p>98%</p>
+                            </div>
+                        </div>
+                    
+                        <!-- Health Suggestions Container -->
+                        <div class="health-suggestions">
+                            <h4>Health Suggestions:</h4>
+                            <ul>
+                                <li>Increase physical activity for better cardiovascular health.</li>
+                                <li>Ensure adequate hydration to maintain healthy blood pressure.</li>
+                                <li>Monitor temperature and seek medical advice if it fluctuates.</li>
+                            </ul>
+                        </div>
+                    
+                        <!-- Record Health Data Button -->
+                        <button class="record-button">
+                            <i class="fas fa-plus"></i> Record Health Data
+                        </button>
+                    </div>
+                    
+                    <div class="box-body-right">
+                        <img src="img/heart-rate.png" alt="Heart Rate" class="heart-rate">
+                    </div>
+                </div>
+            </div>
+            <div class="app-box">
+                <div class="box-head">
+                    <h3>Chat with AI Bot</h3>
+                </div>
+            
+                <!-- Chat Box -->
+                <div class="chat-box">
+                    <div class="chat-messages" id="chatMessages">
+                        <!-- AI and user messages will appear here -->
+                    </div>
+            
+                    <!-- Chat Input Area -->
+                    <div class="chat-input-area">
+                        <input type="text" id="userMessage" class="chat-input" placeholder="Type your message..." />
+                        <button id="sendMessageButton" class="send-button"><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>            
+            <div class="app-box">sss</div>
+        </div>
+    </div>
+    <script src="js/bot.js"></script>
+</body>
+</html>
